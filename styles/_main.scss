@@ -1,0 +1,124 @@
+.servicio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h3 {
+    color: $secundario;
+    font-weight: normal;
+  }
+  p {
+    line-height: 2;
+    text-align: center;
+  }
+  .iconos {
+    height: 15rem;
+    width: 15rem;
+    background-color: $primario;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.servicios {
+  @include tablet_responsive {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+/*.servicio h3 {
+    color: var(--secundario);
+    font-weight: normal;
+  }
+  .servicio p {
+    line-height: 2;
+    text-align: center;
+  }
+  
+  .servicio .iconos {
+    height: 15rem;
+    width: 15rem;
+    background-color: var(--primario);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  */
+.formulario {
+  background-color: $primario;
+  width: 60rem; /*min(60rem, 100%);*/
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 1rem;
+  fieldset {
+    border: none;
+  }
+  legend {
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: $oscuro;
+  }
+}
+
+/*.formulario fieldset {
+    border: none;
+  }
+  
+  .formulario legend {
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--primario);
+  }
+  */
+.contenedor-campos {
+  display: grid;
+}
+.campo {
+  margin-top: 1rem;
+  label {
+    color: $oscuro;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+  textarea {
+    height: 20rem;
+  }
+  .input-text {
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: 0.5rem; /*NO ESTOY SEGURA SI HAY QUE METERLO EN LA CLASE CAMPO JUNTO CON LABEL Y TEXTAREA*/
+  }
+}
+/*.campo label {
+    color:$blanco;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+  */
+/*.input-text { NO ESTOY SEGURA SI HAY QUE METERLO EN LA CLASE CAMPO JUNTO CON LABEL Y TEXTAREA
+  width: 100%;
+  border: none;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+.enviar .boton {
+  width: 100%;
+}
+
+/*.campo textarea {
+    height: 20rem;
+  }
+  */
+.enviar .boton {
+  width: 100%;
+}

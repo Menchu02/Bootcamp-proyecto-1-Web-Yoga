@@ -1,0 +1,20 @@
+.boton {
+  background-color: $secundario;
+  color: white;
+  padding: 1rem 3rem;
+  margin-top: -1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  width: 90%;
+  text-align: center;
+  border: none;
+  margin-top: 3rem;
+  &:hover {
+    cursor: pointer;
+  }
+  @include tablet_responsive {
+    width: auto;
+  }
+}

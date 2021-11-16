@@ -1,0 +1,7 @@
+$layout-tablet: 768px;
+
+@mixin tablet_responsive {
+  @media (min-width: #{$layout-tablet}) {
+    @content;
+  }
+}

@@ -1,0 +1,55 @@
+.sombra {
+  -webkit-box-shadow: 10px 10px 5px 1px rgba(148, 124, 148, 0.76);
+  box-shadow: 10px 10px 5px 1px rgba(148, 124, 148, 0.76);
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.boton {
+  background-color: var(--secundario);
+  color: #bb9bb0;
+  padding: 1rem 3rem;
+  margin-top: -1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  width: 90%;
+  text-align: center;
+  border: none;
+  margin-top: 3rem;
+}
+
+.boton:hover {
+  cursor: pointer;
+}
+
+/* Globales */
+html {
+  font-size: 62.5%;
+  /* 1 rem = 10px*/
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* Hack para box Model*/
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-size: 16px;
+  /*1 rem = 10 px*/
+  font-family: 'Prata', serif;
+  background-color: rgba(121, 93, 59, 0.2);
+  /*background-image: rgba(42, 8, 235, 1)/*linear-gradient(
+      to top,
+      var(--gris-claro) 0%,
+      var(--blanco) 100%
+    );*/
+}
+/*# sourceMappingURL=style.css.map */

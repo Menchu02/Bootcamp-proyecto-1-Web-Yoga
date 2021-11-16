@@ -1,0 +1,335 @@
+.sombra {
+  -webkit-box-shadow: 10px 10px 5px 1px rgba(148, 124, 148, 0.76);
+  box-shadow: 10px 10px 5px 1px rgba(148, 124, 148, 0.76);
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.boton {
+  background-color: #bb9bb0;
+  color: white;
+  padding: 1rem 3rem;
+  margin-top: -1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  width: 90%;
+  text-align: center;
+  border: none;
+  margin-top: 3rem;
+}
+
+.boton:hover {
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .boton {
+    width: auto;
+  }
+}
+
+h1 {
+  font-size: 3.8rem;
+}
+
+h2 {
+  font-size: 2.8rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+.titulo span {
+  font-size: 2rem;
+}
+
+.navegacion-principal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navegacion-principal a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+.navegacion-principal a:hover {
+  background-color: #edebd7;
+  color: #212121;
+}
+
+@media (min-width: 768px) {
+  .navegacion-principal {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.nav-bg {
+  background-color: #bb9bb0;
+  border-radius: 3rem;
+}
+
+/*.navegacion-principal a 
+  color: $blanco;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1rem;
+}*/
+/*.navegacion-principal a:hover 
+  background-color: $primario;
+  color: $oscuro;
+}*/
+.hero {
+  background-image: url(../img/mar.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 45rem;
+  margin-bottom: 2rem;
+  border-radius: 3rem;
+}
+
+.contenido-hero {
+  /* background-color: rgba(0, 0, 0, 0.7);*/
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contenido-hero h2,
+.contenido-hero p {
+  color: #ffffff;
+}
+
+/*.contenido-hero h2,
+.contenido-hero p 
+  color: var(--blanco);
+}
+*/
+.servicio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.servicio h3 {
+  color: #bb9bb0;
+  font-weight: normal;
+}
+
+.servicio p {
+  line-height: 2;
+  text-align: center;
+}
+
+.servicio .iconos {
+  height: 15rem;
+  width: 15rem;
+  background-color: #edebd7;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 768px) {
+  .servicios {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/*.servicio h3 {
+    color: var(--secundario);
+    font-weight: normal;
+  }
+  .servicio p {
+    line-height: 2;
+    text-align: center;
+  }
+  
+  .servicio .iconos {
+    height: 15rem;
+    width: 15rem;
+    background-color: var(--primario);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  */
+.formulario {
+  background-color: #edebd7;
+  width: 60rem;
+  /*min(60rem, 100%);*/
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.formulario fieldset {
+  border: none;
+}
+
+.formulario legend {
+  text-align: center;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #212121;
+}
+
+/*.formulario fieldset {
+    border: none;
+  }
+  
+  .formulario legend {
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--primario);
+  }
+  */
+.contenedor-campos {
+  display: -ms-grid;
+  display: grid;
+}
+
+.campo {
+  margin-top: 1rem;
+}
+
+.campo label {
+  color: #212121;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.campo textarea {
+  height: 20rem;
+}
+
+.campo .input-text {
+  width: 100%;
+  border: none;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  /*NO ESTOY SEGURA SI HAY QUE METERLO EN LA CLASE CAMPO JUNTO CON LABEL Y TEXTAREA*/
+}
+
+/*.campo label {
+    color:$blanco;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+  */
+/*.input-text { NO ESTOY SEGURA SI HAY QUE METERLO EN LA CLASE CAMPO JUNTO CON LABEL Y TEXTAREA
+  width: 100%;
+  border: none;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+.enviar .boton {
+  width: 100%;
+}
+
+/*.campo textarea {
+    height: 20rem;
+  }
+  */
+.enviar .boton {
+  width: 100%;
+}
+
+/* Globales */
+html {
+  font-size: 62.5%;
+  /* 1 rem = 10px*/
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* Hack para box Model*/
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-size: 16px;
+  /*1 rem = 10 px*/
+  font-family: "Prata", serif;
+  background-color: rgba(121, 93, 59, 0.2);
+  /*background-image: rgba(42, 8, 235, 1)/*linear-gradient(
+      to top,
+      var(--gris-claro) 0%,
+      var(--blanco) 100%
+    );*/
+}
+
+.contenedor {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,38 @@
+//archivo central //
+@import './variables'; //variables siempre primero, segundo funciones, despues el resto//
+@import './responsive';
+
+@import './sombra';
+@import './boton';
+@import './headin';
+@import './navBar';
+@import './section_img_principal';
+@import './main';
+
+/* Globales */
+html {
+  font-size: 62.5%; /* 1 rem = 10px*/
+  box-sizing: border-box; /* Hack para box Model*/
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 16px; /*1 rem = 10 px*/
+  font-family: $primaryFont;
+  background-color: rgba(121, 93, 59, 0.2);
+  /*background-image: rgba(42, 8, 235, 1)/*linear-gradient(
+      to top,
+      var(--gris-claro) 0%,
+      var(--blanco) 100%
+    );*/
+}
+
+//la clase contenedor se reutiliza en varias etiquetas, por eso esta en el archivo general//
+.contenedor {
+  max-width: 120rem;
+  margin: 0 auto;
+}
